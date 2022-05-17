@@ -1,10 +1,4 @@
 <?php
-/**
- * User: TheCodeholic
- * Date: 7/10/2020
- * Time: 8:21 AM
- */
-
 use thecodeholic\phpmvc\Application;
 
 require_once __DIR__.'/vendor/autoload.php';
