@@ -91,7 +91,7 @@ require APPROOT . '/views/includes/header.php';
                 </div>
                 <div class="row g-3 pt-1 justify-content-center">
                     <div class="col-12 col-sm-12 col-lg-5">
-                        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                        <canvas id="myChart" style="width:100%;max-width:400px"></canvas>
 
                         <script>
                             var xValues = ["Male", "Female"];
@@ -121,7 +121,7 @@ require APPROOT . '/views/includes/header.php';
                     </div>
                     <div class="col-12 col-sm-12 col-lg-5">
 
-                        <canvas id="myChart3" style="width:100%;max-width:600px"></canvas>
+                        <canvas id="myChart3" style="width:100%;max-width:400px"></canvas>
 
                         <script>
                             var xValues = ["Teachers", "Students"];
@@ -160,7 +160,7 @@ require APPROOT . '/views/includes/header.php';
                 <div class="row g-3 pt-1 justify-content-center">
                     <div class="col-12 col-sm-12 col-lg-5">
 
-                        <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+                        <canvas id="myChart2" style="width:100%;max-width:400px"></canvas>
                         <script>
                             var xValues = <?= $data['x_students_by_class'] ?>;
                             var yValues = <?= $data['y_students_by_class'] ?>;
@@ -197,7 +197,7 @@ require APPROOT . '/views/includes/header.php';
                     </div>
                     <div class="col-12 col-sm-12 col-lg-5">
 
-                        <canvas id="myChart4" style="width:100%;max-width:600px"></canvas>
+                        <canvas id="myChart4" style="width:100%;max-width:400px"></canvas>
 
                         <script>
                             var xValues = ["Class"];

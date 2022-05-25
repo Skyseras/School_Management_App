@@ -11,5 +11,8 @@ define('APPROOT', dirname(dirname(__FILE__)));
 //URLROOT (Dynamic links)
 define('URLROOT', 'http://localhost/mvcloginregister');
 
+
+
+define('BASE_REQUEST_URL',preg_replace('#^/mvcloginregister/pages/#i','',parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH)));
 //Sitename
-define('SITENAME', 'School MA');
+define('SITENAME', 'School Management Application');
