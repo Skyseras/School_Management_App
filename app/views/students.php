@@ -1,4 +1,7 @@
 <?php
+//TODO:: put this in action for the search form
+$searchAction='http://localhost/mvcloginregister/pages/students';
+
 require APPROOT . '/views/includes/header.php';
 // need to add session
 ?>
@@ -50,6 +53,7 @@ require APPROOT . '/views/includes/header.php';
                                                         <option value="Class 2">Class 2</option>
                                                         <option value="Class 3">Class 3</option>
                                                         <option value="Class 4">Class 4</option>
+                                                        <option value="Class 5">Class 5</option>
                                                     </select>
                                                 </div>
                                                 <div class="col-md-6">

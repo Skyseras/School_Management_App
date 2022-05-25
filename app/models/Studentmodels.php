@@ -36,6 +36,14 @@ class Studentmodels
         $this->db->execute();
         return $this->db->resultSet();
     }
+
+    public function getsearch($word)
+    {
+        $this->db->query("SELECT * FROM students WHERE name LIKE '%$word%' OR gender LIKE '%$word%' OR class LIKE '%$word%' OR parent LIKE '%$word%' OR address LIKE '%$word%' OR email LIKE '%$word%' OR birthday LIKE '%$word%' order by id DESC");
+        $this->db->execute();
+        return $this->db->resultSet();
+    }
+
     public function getStudentsMale()
     {
         $this->db->query('SELECT * FROM students WHERE gender="Male"');
@@ -51,7 +59,7 @@ class Studentmodels
 
     public function getStudentsByClass()
     {
-        $this->db->query('select count(*) as students_count,class as class_name from students GROUP by class;');
+        $this->db->query('SELECT count(*) AS students_count, class AS class_name FROM students GROUP by class;');
         $this->db->execute();
         return $this->db->resultSet();
     }

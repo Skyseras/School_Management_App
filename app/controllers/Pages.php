@@ -45,7 +45,13 @@ class Pages extends Controller
     {
         require $_SERVER['DOCUMENT_ROOT'] . '/mvcloginregister/app/models/Studentmodels.php';
         $m = new Studentmodels;
-        $this->view('students', $m->get());
+    
+        if(isset($_GET['w'])){
+            $this->view('students', $m->getsearch($_GET['w']));
+        }else{
+            $this->view('students', $m->get());
+        }
+        
     }
 
     public function teachers()
